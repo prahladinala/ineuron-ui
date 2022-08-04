@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Variables */
+:root {
+  --color-primary: #283278;
+  --color-secondary: #f28900;
+  --color-white: #ffffff;
+  --color-grey: #eef0f5;
+}
+/* SELECTION COLOR */
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--color-white);
+  background: var(--color-secondary);
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-secondary);
+}
+.navbar {
+  font-family: "Montserrat", sans-serif;
+}
+.navbar .container-fluid {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.form-inline {
+  width: 100%;
+}
+.nav-item {
+  font-weight: 600;
+}
+/* ORANGE BUTTON */
+.btn-orange {
+  background-color: var(--color-secondary) !important;
+  border-color: var(--color-secondary) !important;
+  color: var(--color-white) !important;
+}
+.btn-orange:hover {
+  color: var(--color-secondary) !important;
+  border-color: var(--color-secondary);
+  background-color: var(--color-white) !important;
+}
+.btn-outline-orange {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+.btn-outline-orange:hover {
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+}
+/* BLUE BUTTON */
+.btn-outline-blue {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-outline-blue:hover {
+  color: var(--color-white) !important;
+  background-color: var(--color-primary);
+}
+.btn-blue {
+  color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+.btn-blue:hover {
+  color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  background-color: var(--color-white);
+}
+/* WHITE BUTTON */
+.btn-outline-white {
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+.btn-outline-white:hover {
+  color: var(--color-primary) !important;
+  background-color: var(--color-white);
+}
+.btn-white {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+}
+.btn-white:hover {
+  color: var(--color-white) !important;
+  border-color: var(--color-primary) !important;
+  background-color: var(--color-primary);
+}
+/* ORANGE TEXT */
+.text-orange {
+  color: var(--color-secondary);
+}
+/* BLUE TEXT */
+.text-blue {
+  color: var(--color-primary);
+}
+/* HEADER SECTION */
+.main-header {
+  background: linear-gradient(to right, #535b93, #f5a133);
+  height: 80vh;
+}
+.image-sec img {
+  width: 100%;
+}
+/* APP SECTION */
+.app-img img {
+  max-width: 90%;
+}
+.app-badge {
+  width: 100%;
+  max-width: 150px;
+}
+/* OUR TEAM SECTION */
+.ourteam-section {
+  background-color: #eef0f5;
+}
+.ourcard {
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.ourcard:hover {
+  border-radius: 20px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+.ourcard:hover .text-muted {
+  color: var(--color-white) !important;
+}
+.ourcard:hover a {
+  color: var(--color-white);
+}
+/* FAQ SECTION */
+.faqs {
+  background: linear-gradient(to right, #535b93, #f5a133);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.btn-link {
+  color: var(--color-white);
+  font-weight: 800;
+}
+.btn-link:hover {
+  color: var(--color-white);
+  font-weight: 800;
+}
+.faq-img {
+  width: 100%;
+}
+/* REVIEWS */
+.success-section {
+  background-color: var(--color-grey);
+}
+.grad-jumbo {
+  background: linear-gradient(to right, #535b93, #f5a133);
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  border-radius: 25px;
+}
+/* DOWN FOOTER */
+.down-footer {
+  background-color: #283278;
+  color: #ffffff;
+}
+/* IWRITECODE */
+.iwritecode {
+  color: var(--color-secondary);
+  font-weight: 800;
+}
+/* CONTACT SECTION */
+.contact-section {
+  background-color: var(--color-grey);
+}
+/* MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container-fluid input {
+    width: 70vw !important;
+  }
+  .input-group button {
+    width: 100%;
+  }
+  .signin-btn {
+  }
+  .signup-btn {
+    margin-top: 10px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container-fluid input {
+    width: 40vw !important;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container-fluid input {
+    width: 40vw !important;
+  }
+  .signin-btn {
+  }
+  .signup-btn {
+    margin-left: 10px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container-fluid input {
+    width: 40vw !important;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container-fluid input {
+    width: 40vw !important;
+  }
+}
